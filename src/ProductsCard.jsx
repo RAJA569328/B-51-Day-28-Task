@@ -29,8 +29,8 @@ function ProductsCard() {
               <div className="product-details">
                 <div className="product-title"><b>PRODUCT NAME :</b> {product.title}</div>
                 <div className="product-price"><b>PRODUCT PRICE :</b> $ {product.price} /Product</div>
-                <div className="product-qty"><b>QUANTITY : </b><input type="number" value={quantities[index]} max={5} min={1} onChange={(e) => handleQuantityChange(e, index)} /></div>
-                <button className="product-remove" style={{margin:'10px', backgroundColor:'orange', color:'black', border:'2px solid black'}} onClick={() => handleRemove(index)}>REMOVE</button>
+                <div className="product-qty"><b>QUANTITY : </b><input type="number" value={quantities[index]} max={5} min={1} onChange={(e) => handleQuantityChange(e, index)} /><span> Max Qty : 5 Nos</span></div>
+                <button className="product-remove" style={{margin:'10px', backgroundColor:'orange', color:'black', border:'2px solid black'}}>REMOVE</button>
               </div>
             </div>
             <div className="cart-total">
